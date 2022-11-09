@@ -8,11 +8,11 @@ const procData = require("./procData");
 // 라이브러리
 const axios = require("axios");
 
-module.exports = async () => {
+module.exports = async (method, baseURL, url) => {
   await axios({
-    method: "get",
-    baseURL: "https://jc.woosuk.ac.kr/",
-    url: "webService.do?menuCode=K08M0302",
+    method: method,
+    baseURL: baseURL,
+    url: url,
   })
     .then((res) => {
       // return rawData(res, ".table_t1 > tbody > tr");
