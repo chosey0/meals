@@ -34,7 +34,7 @@ module.exports = async () => {
     })
     .catch((err) => console.log(err));
 };
-
+// 클래스 객체로 바꾸는중입니다
 class research {
   constructor(rootURL) {}
 
