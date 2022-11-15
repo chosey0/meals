@@ -23,7 +23,12 @@ mongoose
     app.listen(PORT);
   })
   .then(() => {
-    getData();
+    getData(
+      "get",
+      "https://jc.woosuk.ac.kr/",
+      "webService.do?menuCode=K08M0302",
+      ".table_t1 "
+    );
   })
   .catch((err) => {
     console.log(err);
